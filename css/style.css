@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 50px 100px;
+}
+
+
+/* login area start */
+
+.hello {
+    font-weight: 600;
+}
+
+.header-text {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.payonner-text-custom-design {
+    color: #FF4802;
+}
+
+.payonner-text-custom-design-two {
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+}
+
+#submit-area {
+    padding: 50px;
+    box-shadow: 5px 5px 40px #c0bfbf;
+    margin-top: 50px;
+}
+
+.login-text {
+    font-size: 35px;
+    font-weight: 800;
+    color: #FF4802;
+    text-transform: uppercase;
+}
+
+.custom-login-form .text-info {
+    color: #FF4802 !important;
+}
+
+.login-btn {
+    width: 100%;
+    background: #FF4802;
+    border: 0;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background: #FF4802;
+}
+
+
+/* login area end */
+
+
+/* transaction area start */
+
+#transaction-area {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+    top: 0;
+    height: 100vh;
+}
+
+.perfect-scrollbar-on .main-panel,
+.perfect-scrollbar-on .sidebar {
+    height: 100%;
+    max-height: 100%;
+}
+
+.sidebar:before {
+    display: block;
+    content: "";
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    width: 260px;
+    left: 0;
+    z-index: 1030;
+    padding: 30px 40px 0px 30px;
+    background: #F96332;
+}
+
+.main-panel {
+    position: relative;
+    float: right;
+    width: calc(100% - 260px);
+    transition: all .5s cubic-bezier(.685, .0473, .346, 1);
+}
+
+.sidebar .nav p {
+    margin: 0;
+    line-height: 30px;
+    position: relative;
+    display: block;
+    height: auto;
+    white-space: nowrap;
+}
+
+.sidebar .logo {
+    position: relative;
+    z-index: 4;
+}
+
+.payonner-text-custom-design-two-dash {
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.payonner-text-custom-design-dash {
+    color: #FF4802;
+}
+
+.logo-normal:hover {
+    text-decoration: none;
+}
+
+hr {
+    background: #e2e2e2;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.sidebar .nav li>a {
+    color: #f96332;
+    font-size: 13px;
+}
+
+.sidebar-wrapper {
+    z-index: 99999;
+    position: absolute;
+}
+
+.sidebar .nav .active {
+    background: #fff;
+    width: 100%;
+    padding: 13px 55px;
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+.sidebar .nav li>a:hover {
+    text-decoration: none;
+}
+
+.deposit-area {
+    margin-right: 30px;
+    background: rgb(2, 0, 36);
+    background: #1D976C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    padding: 25px 0px;
+    border-radius: 5px;
+}
+
+.withdraw-area {
+    margin-right: 30px;
+    background: #FF8008;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC837, #FF8008);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    padding: 25px 0px;
+    border-radius: 5px;
+}
+
+.balance-area {
+    margin-right: 30px;
+    background: #AA076B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    padding: 25px 0px;
+    border-radius: 5px;
+}
+
+.deposit-input-area {
+    margin-top: 80px;
+    box-shadow: 5px 5px 45px #c4c4c4;
+    padding: 50px;
+}
+
+.input-lab {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.deposit-input-btn {
+    background: rgb(2, 0, 36);
+    background: #1D976C;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 6px 20px;
+}
+
+.deposit-input-btn:hover {
+    color: #ffffff;
+}
+
+.withdraw-input-btn {
+    background: #AA076B;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 6px 15px;
+}
+
+.withdraw-input-btn:hover {
+    color: #ffffff;
+}
+
+
+/* transaction area end */

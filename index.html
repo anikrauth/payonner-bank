@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to our Payonner bank</title>
+    <!-- bootstrap css start -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap css end -->
+    <!-- main css start -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- main css end -->
 </head>
+
 <body>
-    
+    <!-- login area start -->
+    <div id="login-area">
+        <div class="row">
+            <div class="col-lg-4 m-auto">
+                <div>
+                    <h1 class="text-center hello">
+                        <span class="header-text">Welcome to</span> <br>
+                        <span class="payonner-text-custom-design-two">Pa<span
+                                class="payonner-text-custom-design">y</span>onner</span> Bank
+                    </h1>
+                    <div id="submit-area">
+                        <form action="#" class="custom-login-form">
+                            <h4 class="login-text pb-5 text-center">
+                                Login
+                            </h4>
+                            <label for="username" class="text-info">Username:</label><br>
+                            <input type="text" name="username" class="form-control mb-3" placeholder="Enter your Email">
+                            <label for="username" class="text-info">Password:</label><br>
+                            <input type="text" class="form-control mb-3" placeholder="Enter your Password">
+                            <button type="submit" id="submit-btn" class="btn btn-success login-btn">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login area end -->
+    <!-- transaction area start -->
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper ">
+                    <div class="sidebar" data-color="orange">
+                        <div class="logo">
+                            <a href="#" class="logo-normal">
+                                <span class="payonner-text-custom-design-two-dash">Pa<span
+                                    class="payonner-text-custom-design-dash">y</span>onner</span>
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="sidebar-wrapper">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="#">
+                                        Dashboard
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-panel">
+                        <!-- deposit, withdraw, banlance area start -->
+                        <div class="row">
+                            <div class="col-lg-4 pr-0 pl-0 text-center">
+                                <div class="deposit-area">
+                                    <h4 class="diposit-area-text">
+                                        Deposit
+                                    </h4>
+                                    <h4 class="diposit-area-dollar">
+                                        $ <span id="carrent-deposit">00</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 pr-0 pl-0 text-center">
+                                <div class="withdraw-area">
+                                    <h4 class="diposit-area-text">
+                                        Withdraw
+                                    </h4>
+                                    <h4 class="diposit-area-dollar">
+                                        $ 00
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 pr-0 pl-0 text-center">
+                                <div class="balance-area">
+                                    <h4 class="diposit-area-text">
+                                        Balance
+                                    </h4>
+                                    <h4 class="diposit-area-dollar">
+                                        $ <span id="current-balance">00</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- deposit, withdraw, banlance area end -->
+                        <div class="row">
+                            <div class="col-lg-6 pl-0">
+                                <div class="deposit-input-area">
+                                    <div class="md-form">
+                                        <label for="deposit-amount" class="input-lab">Deposit</label>
+                                        <input type="text" id="deposit-amount" class="form-control" placeholder="$ Amount you want to Deposit!">
+                                        <button type="submit" id="add-deposit-submit-btn" class="btn deposit-input-btn">Deposit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pl-0">
+                                <div class="deposit-input-area">
+                                    <div class="md-form">
+                                        <label for="form1" class="input-lab">Withdraw</label>
+                                        <input type="text" id="form1" class="form-control" placeholder="$ Amount you want to Withdraw!">
+                                        <button type="submit" id="get-withdraw-submit-btn" class="btn withdraw-input-btn">Withdraw</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- transaction area end -->
+
+
+
+    <!-- javascript start -->
+    <script src="js/script.js"></script>
+    <!-- javascript end -->
+
 </body>
+
 </html>
