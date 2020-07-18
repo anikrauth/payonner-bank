@@ -10,22 +10,52 @@ loginSubmitBtn.addEventListener("click", function() { //create a addEventListene
 //Deposit Button Event create
 const depositBtn = document.getElementById("add-deposit-submit-btn"); // Deposit add Button id
 depositBtn.addEventListener("click", function() { // create a addEventListener and a Function 
-    const addDepositAmount = document.getElementById("deposit-amount").value; //  addDepositAmount select input id and value
-    const depositNumber = parseFloat(addDepositAmount); // convert string value to number
+    const amountNumber = getNumber("deposit-amount");
     //despoist 
-    const addCurrentDeposit = document.getElementById("carrent-deposit").innerText; //read show in deposit total amount id and inner text
-    const currentDepositNumber = parseFloat(addCurrentDeposit); // Show in Deposit convert string value to number
-    const totalDeposit = depositNumber + currentDepositNumber; // depositNumber + currentDepositNumber for show in frontend 
-    document.getElementById("carrent-deposit").innerText = totalDeposit; //write this is for show total amount of Deposit
-    //current balance
-    const addCurrentBalance = document.getElementById("current-balance").innerText;
-    const currentBalanceNumber = parseFloat(addCurrentBalance);
-    const totalBalance = depositNumber + currentBalanceNumber;
-    document.getElementById("current-balance").innerText = totalBalance;
-
-
+    updateAmount("carrent-deposit", amountNumber)
+        //current balance
+    updateAmount("current-balance", amountNumber)
     document.getElementById("deposit-amount").value = ""; //this is for clear the input
 });
+
+
+//Withdraw Button Event Create
+const withdrawBtn = document.getElementById("get-withdraw-submit-btn");
+withdrawBtn.addEventListener("click", function() {
+    const amountNumber = getNumber("withdrawAmount");
+    updateAmount("currentWithdraw", amountNumber)
+    updateAmount("current-balance", -1 * amountNumber)
+
+    document.getElementById("withdrawAmount").value = ""; //this is for clear the input
+});
+
+
+
+
+
+
+
+
+
+
+function getNumber(id) {
+    const addDepositAmount = document.getElementById(id).value; //  addDepositAmount select input id and value
+    const amountNumber = parseFloat(addDepositAmount); // convert string value to number
+    return amountNumber;
+}
+
+
+function updateAmount(id, amountNumber) {
+    const addCurrentBalance = document.getElementById(id).innerText; //read show in deposit total amount id and inner text
+    const currentBalanceNumber = parseFloat(addCurrentBalance); // Show in Deposit convert string value to number
+    const totalBalance = amountNumber + currentBalanceNumber; // depositNumber + currentDepositNumber for show in frontend 
+    document.getElementById(id).innerText = totalBalance; //write this is for show total amount of Deposit
+}
+
+
+
+
+
 
 
 
