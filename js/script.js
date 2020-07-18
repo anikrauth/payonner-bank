@@ -18,7 +18,6 @@ depositBtn.addEventListener("click", function() { // create a addEventListener a
     document.getElementById("deposit-amount").value = ""; //this is for clear the input
 });
 
-
 //Withdraw Button Event Create
 const withdrawBtn = document.getElementById("get-withdraw-submit-btn");
 withdrawBtn.addEventListener("click", function() {
@@ -29,21 +28,11 @@ withdrawBtn.addEventListener("click", function() {
     document.getElementById("withdrawAmount").value = ""; //this is for clear the input
 });
 
-
-
-
-
-
-
-
-
-
 function getNumber(id) {
     const addDepositAmount = document.getElementById(id).value; //  addDepositAmount select input id and value
     const amountNumber = parseFloat(addDepositAmount); // convert string value to number
     return amountNumber;
 }
-
 
 function updateAmount(id, amountNumber) {
     const addCurrentBalance = document.getElementById(id).innerText; //read show in deposit total amount id and inner text
